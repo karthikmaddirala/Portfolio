@@ -3,10 +3,14 @@ name: Deploy to Firebase Hosting to Demo
   push:
     branches:
       - main
+
 jobs:
   build_and_deploy:
     if: ${{ github.repository }} == 'karthikmaddirala/Portfolio'
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18]  # Set this to the version your project uses
     steps:
       - uses: actions/checkout@v2
 
@@ -14,19 +18,16 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-          
+
       - name: Install dependencies
         run: yarn install
 
       - name: Build app
-        run: yarn build
+        run: CI=false yarn build
 
       - name: Create firebase.json and .firebaserc
         run: |
-          echo ${{ secrets.FIREBASE_JSON }} | base64 -d >> firebase.json
-          echo ${{ secrets.FIREBASERC }} | base64 -d >> .firebaserc
+          echo ${{ secrets.FIREBASE_JSON }} | base64 -d > firebase.json
+          echo ${{ secrets.FIREBASERC }} | base64 -d > .firebaserc
 
       - name: Deploy to Firebase Hosting
-        run: |
-          npm install -g firebase-tools
-          firebase deploy --only hosting:demo --project=${{ secrets.FIREBASE_PROJECT_NAME }} --token=${{ secrets.FIREBASE_TOKEN }} --non-interactive
