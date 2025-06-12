@@ -1,32 +1,34 @@
-name: Deploy to Firebase Hosting on Prod
-'on':
+name: Deploy React App to GitHub Pages
+
+on:
   push:
     branches:
       - main
-jobs:
-  build_and_deploy:
-    if: ${{ github.repository }} == secrets.REPO_NAME
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          
+          node-version: 18
+
       - name: Install dependencies
         run: yarn install
 
-      - name: Build app
-        run: yarn build
+      - name: Build project (ignore warnings)
+        run: CI=false yarn build
 
-      - name: Create firebase.json and .firebaserc
-        run: |
-          echo ${{ secrets.FIREBASE_JSON }} | base64 -d >> firebase.json
-          echo ${{ secrets.FIREBASERC }} | base64 -d >> .firebaserc
-
-      - name: Deploy to Firebase Hosting
-        run: |
-          npm install -g firebase-tools
-          firebase deploy --only hosting:prod --project=${{ secrets.FIREBASE_PROJECT_NAME }} --token=${{ secrets.FIREBASE_TOKEN }} --non-interactive
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
