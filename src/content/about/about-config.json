@@ -1,0 +1,80 @@
+{
+    "educations": [
+        {
+            "id": "edu-1",
+            "school": "University of Kansas",
+            "degree": "Master of Science in Computer Science",
+            "duration": "Aug 2023 - Dec 2025",
+            "content": [
+                "GPA: 3.78/4"
+            ]
+        },
+        {
+            "id": "edu-2",
+            "school": "SRM University",
+            "degree": "Bachelors in Computer Science with AI & ML specilization",
+            "duration": "Jul 2019 - May 2023",
+            "content": [
+                "GPA: 8.8/10"
+            ]
+        }
+    ],
+    "experiences": [
+        {
+            "id": "exp-1",
+            "company": "Hex-N-Bit",
+            "position": "Intern",
+            "duration": "Jun 2021 - Aug 2021",
+            "description": [
+                "Developed a loan approval prediction model using Random Forest and XGBoost in Python and scikit-learn, achieving 96% accuracy by applying PCA, feature engineering, and SMOTE for class imbalance on a dataset of over 500K financial records.​",
+                "Enhanced data handling and model performance through automated PySpark and Azure Databricks pipelines, improving preprocessing efficiency and integrating SHAP for model explainability."
+            ]
+        },
+        {
+            "id": "exp-2",
+            "company": "SRM University",
+            "position": "Research Assistant",
+            "duration": "Jun 2022 - Dec 2022",
+            "description": [
+                "Worked on developing predictive models to forecast pavement distress on highways using real-time visual data. Leveraged camera systems to capture road surface conditions and applied machine learning techniques to analyze cracks, potholes, and other signs of degradation.​",
+                "Combined visual analysis with contextual data such as traffic load and environmental factors to improve prediction accuracy. The goal was to enable early detection of distress and support proactive maintenance strategies, contributing to safer and more cost-effective infrastructure management."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "title": "Programming",
+            "tools": [
+                "Python",
+                "C/C++",
+                "SQL",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "Core Concepts",
+            "tools": [" Data Structures", " Algorithms", "Operating Systems", "DBMS", "MySQL"]
+        },
+        {
+            "title": "Data Engineering & Visualization",
+            "tools": ["AWS (Glue, Redshift, S3, EMR, Lambda, Kinesis)", "Hadoop", "PySpark", "Kafka", "Airflow", "Snowflake", "ETL Pipelines", "Power BI", "Excel", "Numpy", "Pandas"]
+        },
+
+        {
+            "title": "Competencies",
+            "tools": ["Data Analysis", "Data Engineering", "Data Visualization", "Data Modeling", "Data Pipelines", "Machine Learning", "Deep Learning", "Artificial Intelligence", "Data Warehousing"]
+        }
+    ],
+    "blog": [
+        {
+            "id": "blog-1",
+            "title": "A beginner's guide to github",
+            "link": ""
+        },
+        {
+            "id": "blog-2",
+            "title": "User Experience Design – A little more than just design",
+            "link": ""
+        }
+    ]
+}
