@@ -130,21 +130,21 @@ export const FeaturedProjectCard: FC<Props> = ({
               //  pl={{ base: "0", lg: ImagePositionPaddingRightMapper[imagePosition] }}
                 pr={{ base: "0", lg: ImagePositionPaddingLeftMapper[imagePosition] }}
             >
-                <picture>
-  <source type="image/webp" srcSet={image} />
-  <source type="image/jpeg" srcSet={jpg} />
-  <img
-    src={jpg}
-    alt={`${title}-cover-image`}
-    style={{
-      width: "100%",
-      borderRadius: "12px",
-      transition: "all 0.4s ease-in-out",
-    }}
-    onMouseOver={(e) => (e.currentTarget.style.boxShadow = "0px 20px 60px rgb(77 77 77 / 10%)")}
-    onMouseOut={(e) => (e.currentTarget.style.boxShadow = "")}
-  />
-</picture>
+            <picture>
+                  <source type="image/webp" srcSet={image} />
+                  <source type="image/jpeg" srcSet={jpg} />
+                  <img
+                    src={jpg}
+                    alt={`${title}-cover-image`}
+                    style={{
+                      width: "100%",
+                      borderRadius: "12px",
+                      transition: "all 0.4s ease-in-out",
+                        }}
+                    onMouseOver={(e) => (e.currentTarget.style.boxShadow = "0px 20px 60px rgb(77 77 77 / 10%)")}
+                    onMouseOut={(e) => (e.currentTarget.style.boxShadow = "")}
+                />
+            </picture>
 
             </Box>
         </Flex>
