@@ -9,7 +9,7 @@
         "description": "The Smart City Real-Time Streaming & Analytics Pipeline ingests real-time smart city IoT data (vehicle telemetry, GPS, weather, traffic, emergency events) through Apache Kafka, processes and enriches it using Spark Structured Streaming, stores both raw and enriched data in Amazon S3, catalogs the schema using AWS Glue Crawlers and the Data Catalog, enables ad-hoc SQL querying via Amazon Athena, and loads analytics-ready datasets into Amazon Redshift for business intelligence and reporting.",
         "description2":"",
         "image": "https://karthikmaddirala.github.io/Portfolio/assets/featured-projects/DataFlow.webp",
-        "jpg": "./assets/featured-projects/DataFlow.jpg"
+        "jpg": "https://karthikmaddirala.github.io/Portfolio/assets/featured-projects/DataFlow.jpg"
     },
 
     {
