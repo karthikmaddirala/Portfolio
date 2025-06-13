@@ -51,6 +51,7 @@ export const FeaturedProjectCard: FC<Props> = ({
     year,
     jpg,
 }) => {
+    console.log("Rendering image:", image);
     return (
         <Flex
             justifyContent="space-between"
