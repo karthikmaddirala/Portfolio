@@ -1,33 +1,29 @@
-name: Deploy React App to GitHub Pages
-  
+name: Deploy to GitHub Pages
+
 on:
   push:
     branches:
       - main
-
-permissions:
-  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Set up Node.js
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '16'
 
       - name: Install dependencies
         run: yarn install
 
-      - name: Build project (ignore warnings)
-        run: CI=false yarn build
+      - name: Build
+        run: yarn build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
