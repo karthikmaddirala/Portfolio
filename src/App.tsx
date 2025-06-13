@@ -9,6 +9,16 @@ import "aos/dist/aos.css";
 
 import ScrollArrow from "pages/scroll"; // default export
 
+import React from "react";
+import ImageTest from "./pages/ImageTest";
+
+function App() {
+  return <ImageTest />;
+}
+
+export default App;
+
+
 const Navbar = lazy(() => import("shared/navbar/Navbar").then((module) => ({ default: module.Navbar })));
 const Landing = lazy(() => import("pages/landing/Landing").then((module) => ({ default: module.Landing })));
 const PageHeader = lazy(() =>
