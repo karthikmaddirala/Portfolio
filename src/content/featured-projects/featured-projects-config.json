@@ -3,7 +3,7 @@
         "id": "featured-project-trackcta",
         "title": "Real time Stream Processing and Analytics Pipeline",
         "year": "May 2025 - May 2025",
-        "report": "https://github.com/karthikmaddirala/Real-time-Smart-City-Streaming-Analytics-Pipeline",
+        "report": "https://github.com/karthikmaddirala/Real-time-Smart-City-Streaming-Analytics-Pipeline/blob/main/Project%20Documentation.pdf",
         "github": "https://github.com/karthikmaddirala/Real-time-Smart-City-Streaming-Analytics-Pipeline",
         "tags": ["Kafka", "Spark", "S3", "Athena", "Redshift", "Glue", "Docker", "Python", "ETL"],
         "description": "The Smart City Real-Time Streaming & Analytics Pipeline ingests real-time smart city IoT data (vehicle telemetry, GPS, weather, traffic, emergency events) through Apache Kafka, processes and enriches it using Spark Structured Streaming, stores both raw and enriched data in Amazon S3, catalogs the schema using AWS Glue Crawlers and the Data Catalog, enables ad-hoc SQL querying via Amazon Athena, and loads analytics-ready datasets into Amazon Redshift for business intelligence and reporting.",
