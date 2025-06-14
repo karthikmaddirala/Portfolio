@@ -11,7 +11,7 @@ import { MenuDrawer } from "./drawer/Drawer";
 import { ColorModeButton } from "shared/color-mode-button/ColorModeButton";
 
 export const Navbar: FC = () => {
-    const bg = useColorModeValue(bgLight, bgDark);
+    const bg = useColorModeValue(bgDark, bgLight);
     const navItemColor = useColorModeValue("gray.800", "white");
     const currentPage = useScroll();
 
