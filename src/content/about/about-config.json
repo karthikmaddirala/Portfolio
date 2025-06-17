@@ -24,10 +24,10 @@
             "id": "exp-1",
             "company": "Hex-N-Bit",
             "position": "Intern",
-            "duration": "Jun 2021 - Aug 2021",
+            "duration": "Jun 2021 - May 2022",
             "description": [
-                "Developed a loan approval prediction model using Random Forest and XGBoost in Python and scikit-learn, achieving 96% accuracy by applying PCA, feature engineering, and SMOTE for class imbalance on a dataset of over 500K financial records.​",
-                "Enhanced data handling and model performance through automated PySpark and Azure Databricks pipelines, improving preprocessing efficiency and integrating SHAP for model explainability."
+                "Built a scalable loan approval system using PySpark on Azure Databricks to process 10M+ records with advanced feature engineering. Trained XGBoost and Random Forest models (96% accuracy) and integrated SHAP for explainability.​",
+                "Deployed the model via Flask API with AWS Lambda and S3 for automated batch inference. Stored predictions in Redshift and developed Power BI dashboards for real-time insights. Implemented drift monitoring and retraining pipelines to ensure long-term model performance."
             ]
         },
         {
