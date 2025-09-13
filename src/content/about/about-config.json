@@ -22,12 +22,14 @@
     "experiences": [
         {
             "id": "exp-1",
-            "company": "Hex-N-Bit",
-            "position": "Intern",
-            "duration": "Jun 2021 - May 2022",
+            "company": "Boven Technologies",
+            "position": "Data Analyst",
+            "duration": "May 2022 - May 2023",
             "description": [
-                "Built a scalable loan approval system using PySpark on Azure Databricks to process 10M+ records with advanced feature engineering. Trained XGBoost and Random Forest models (96% accuracy) and integrated SHAP for explainability.​",
-                "Deployed the model via Flask API with AWS Lambda and S3 for automated batch inference. Stored predictions in Redshift and developed Power BI dashboards for real-time insights. Implemented drift monitoring and retraining pipelines to ensure long-term model performance."
+                "In this project, I collaborated closely with client product and risk teams to define their reporting requirements and deliver an end-to-end data solution. My role involved pulling and cleaning loan records from AWS Redshift and Amazon S3 using SQL and Python (Pandas), ensuring the datasets were both accurate and analysis-ready.",
+                "To maintain data reliability, I designed and implemented data-quality checks, which significantly increased stakeholder confidence in the reporting process by reducing errors. With this foundation, I performed cohort, segmentation, and trend analyses on loan repayment records. These analyses uncovered that a specific customer segment exhibited a 12% higher default risk, which directly informed updates to the client’s risk policy.",
+                "On the engineering side, I built batch data pipelines that ingested raw and semi-processed client data into Amazon S3 (data lake), enabling centralized storage and archival. I then designed transformations that curated datasets and loaded them into Amazon Redshift, supporting scalable analytics and much faster client reporting cycles.",
+                "To make insights accessible, I developed Power BI dashboards (with DAX and data modeling) that connected directly to AWS Redshift and Athena. These dashboards reduced manual reporting efforts by 40% and gave executives near real-time visibility into loan approval KPIs."
             ]
         },
         {
@@ -68,12 +70,12 @@
     "blog": [
         {
             "id": "blog-1",
-            "title": "A beginner's guide to github",
+            "title": "",
             "link": ""
         },
         {
             "id": "blog-2",
-            "title": "User Experience Design – A little more than just design",
+            "title": "",
             "link": ""
         }
     ]
