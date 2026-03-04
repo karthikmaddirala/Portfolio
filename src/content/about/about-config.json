@@ -24,7 +24,7 @@
             "id": "exp-1",
             "company": "Boven Technologies",
             "position": "Data Analyst",
-            "duration": "May 2022 - May 2023",
+            "duration": "Jan 2022 - May 2023",
             "description": [
                 "In this project, I collaborated closely with client product and risk teams to define their reporting requirements and deliver an end-to-end data solution. My role involved pulling and cleaning loan records from AWS Redshift and Amazon S3 using SQL and Python (Pandas), ensuring the datasets were both accurate and analysis-ready.",
                 "To maintain data reliability, I designed and implemented data-quality checks, which significantly increased stakeholder confidence in the reporting process by reducing errors. With this foundation, I performed cohort, segmentation, and trend analyses on loan repayment records. These analyses uncovered that a specific customer segment exhibited a 12% higher default risk, which directly informed updates to the client’s risk policy.",
@@ -34,12 +34,13 @@
         },
         {
             "id": "exp-2",
-            "company": "SRM University",
-            "position": "Research Assistant",
-            "duration": "Jun 2022 - Dec 2022",
+            "company": "University of Kansas",
+            "position": "ML Research Assistant",
+            "duration": "Feb 2025 - AUG 2025",
             "description": [
-                "Worked on developing predictive models to forecast pavement distress on highways using real-time visual data. Leveraged camera systems to capture road surface conditions and applied machine learning techniques to analyze cracks, potholes, and other signs of degradation.​",
-                "Combined visual analysis with contextual data such as traffic load and environmental factors to improve prediction accuracy. The goal was to enable early detection of distress and support proactive maintenance strategies, contributing to safer and more cost-effective infrastructure management."
+                "Built a machine learning model for real estate price prediction by web scraping real-world listings and performing end-to-end preprocessing (data cleaning, feature engineering, scaling, outlier handling).", 
+                "Trained and optimized multiple regression models (Linear Regression, Decision Tree, Random Forest, Gradient Boost) using 5-fold cross-validation and hyperparameter tuning, achieving high predictive accuracy (R² ≈ 0.88).",
+                "Integrated results into a Retrieval-Augmented Generation (RAG) pipeline with an LLM: fed predicted prices and input features into the model to generate natural-language explanations of price drivers. "
             ]
         }
     ],
